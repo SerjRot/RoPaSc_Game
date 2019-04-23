@@ -6,9 +6,21 @@
 <body>
 <script type="text/javascript">
 	
-	function computerPlay(playerChoice, pcChoice) {
-
+	function pcChoice() {
+		rand = Math.floor(Math.random() * 3);
+		if (rand == 0) {
+			op = 'rock';
+		}
+		else if (rand == 1) {
+			op = 'paper'
+		} 
+		else {
+			op = 'scissors'
+		}
+		return op;
 	}
+	console.log(pcChoice());
+
 
 	const playerChoice = 'rock';
 	const pcChoice = computerPlay();
