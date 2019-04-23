@@ -6,6 +6,7 @@
 <body>
 <script type="text/javascript">
 	
+	function RoPaSc() {
 	function pcChoice() {
 		rand = Math.floor(Math.random() * 3);
 		if (rand == 0) {
@@ -19,12 +20,30 @@
 		}
 		return op;
 	}
-	console.log(pcChoice());
+	pcChoice();
+	console.log(op);
 
+		var plChoice = 'sciSsors';
+		var plChoice = plChoice.toLowerCase();
+		console.log(plChoice);
 
-	const playerChoice = 'rock';
-	const pcChoice = computerPlay();
-	console.log(playRound(playerChoice, pcChoice));
+		if (plChoice === op) {
+			console.log("Draw!");
+		} else if (plChoice === 'scissors' && op ==='paper') {
+			console.log('You won!');
+		} else if (plChoice === 'paper' && op === 'rock') {
+			console.log('You won!');
+		} else {
+			console.log('You lose!')
+		}
+	}
+	RoPaSc();
+
+		for (var i = 1; i < 5; i++) {
+			RoPaSc();
+		}
+	
+
 
 
 </script>
